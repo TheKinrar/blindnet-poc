@@ -1,0 +1,6 @@
+/config.mjs
+/data
+! /data/.gitkeep
+.idea
+*.iml
+node_modules

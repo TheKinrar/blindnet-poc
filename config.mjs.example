@@ -1,0 +1,7 @@
+export default
+{
+  "blindnet": {
+    "id": "app_id",
+    "key": "app_key"
+  }
+}

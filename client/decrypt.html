@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/sketchy/bootstrap.min.css" integrity="sha384-RxqHG2ilm4r6aFRpGmBbGTjsqwfqHOKy1ArsMhHusnRO47jcGqpIQqlQK/kmGy9R" crossorigin="anonymous">
+
+    <title>Blindnet PoC - file transfer</title>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light mt-3">
+            <div class="container-fluid">
+                <a class="navbar-brand mx-auto" href="/">Blindnet PoC - file transfer</a>
+            </div>
+        </nav>
+
+        <div class="card border-primary mt-3">
+            <div class="card-header">Download</div>
+            <div class="card-body">
+                <form id="formDownload">
+                    <fieldset>
+                        <div class="form-group">
+                            <label for="inputPassword" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="inputPassword" placeholder="Password" required>
+                        </div>
+                        <button id="buttonDownload" type="submit" class="btn btn-primary" disabled>Download</button>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="/blindnet.umd.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script type="module" src="/decrypt.js"></script>
+</body>
+</html>
